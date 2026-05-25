@@ -1,5 +1,7 @@
 # terraform-cloudtrail-to-slack
 
+<img src="https://github.com/user-attachments/assets/a09f3eff-3e08-4a3c-b490-71117a40080b" width="460" height="100"/><br>
+
 A Terraform module that deploys a Lambda function to monitor AWS CloudTrail events and send real-time Slack alerts when infrastructure changes occur in your AWS account.
 
 ## Architecture
@@ -66,6 +68,8 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+For detailed step-by-step instructions see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ---
 
