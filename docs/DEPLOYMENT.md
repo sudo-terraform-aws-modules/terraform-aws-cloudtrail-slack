@@ -27,7 +27,7 @@ my-deployment/
 
 ```hcl
 module "cloudtrail_to_slack" {
-  source = "git::https://github.com/<your-org>/terraform-cloudtrail-to-slack.git"
+  source = "sudo-terraform-aws-modules/cloudtrail-slack/aws"
 
   project_name                   = "myproject"
   cloudtrail_logs_s3_bucket_name = "my-cloudtrail-logs-123456789"

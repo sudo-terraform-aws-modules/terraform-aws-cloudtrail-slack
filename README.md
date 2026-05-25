@@ -33,7 +33,7 @@ provider "aws" {
 }
 
 module "cloudtrail_to_slack" {
-  source = "git::https://github.com/<your-org>/terraform-cloudtrail-to-slack.git"
+  source = "sudo-terraform-aws-modules/cloudtrail-slack/aws"
 
   project_name                   = "myproject"
   cloudtrail_logs_s3_bucket_name = "my-cloudtrail-logs-bucket"
@@ -78,7 +78,7 @@ For detailed step-by-step instructions see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.
 | Name | Description |
 |------|-------------|
 | `project_name` | Short identifier for the project. Used as prefix for all resource names. Lowercase letters, numbers and hyphens only. e.g. `acme`, `myproject` |
-| `slack_webhook_url` | Slack incoming webhook URL. **Pass via `TF_VAR_slack_webhook_url` — never hardcode in any file.** |
+| `slack_webhook_url` | Slack incoming webhook URL. **Pass via `TF_VAR_slack_webhook_url` - never hardcode in any file.** |
 | `cloudtrail_logs_s3_bucket_name` | Name of the existing S3 bucket where CloudTrail logs are stored. |
 
 ## Optional Variables
