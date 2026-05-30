@@ -7,7 +7,7 @@ A reusable Terraform module that deploys a Lambda function to monitor AWS CloudT
 ## Architecture
 
 <picture>
-  <img alt="CloudTrail to Slack Architecture" src="docs/assets/cloudtrail-to-slack-architecture.svg">
+  <img alt="CloudTrail to Slack Architecture" src="docs/assets/cloudtrail-to-slack-architecture-diagram-updated.png">
 </picture>
 
 1. **CloudTrail** records all API calls and writes compressed log files (`.json.gz`) to S3 every ~5 minutes
@@ -148,7 +148,7 @@ terraform-aws-cloudtrail-slack/
 │       └── main.yml
 ├── docs/
 │   ├── assets/
-│   │   └── cloudtrail-to-slack-architecture.svg
+│   │   └── cloudtrail-to-slack-architecture-diagram-updated.png
 │   └── DEPLOYMENT.md
 ├── lambda/
 │   ├── main.py
